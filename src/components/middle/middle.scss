@@ -2,13 +2,17 @@
   margin-left: 80px;
   width: 70%;
   background-color: rgb(17, 17, 24);
+  padding: 15px 35px;
   .top {
     display: flex;
     .card {
       padding: 1rem 1rem 0.75rem;
       background: rgb(34, 34, 47);
-      box-shadow: rgb(1, 1, 2 / 14%) 0px 12px 54px;
       border-radius: 30px;
+      flex: 1;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
       .work {
         background: linear-gradient(
           0deg,
@@ -25,6 +29,7 @@
         );
         svg {
           margin-top: 15px;
+          padding: 15px;
         }
       }
     }
